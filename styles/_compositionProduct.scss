@@ -1,0 +1,57 @@
+.compositionProduct {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.compositionProduct__container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.compositionProduct__first,
+.compositionProduct__second {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.compositionProduct__first-content,
+.compositionProduct__second-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.compositionProduct__first-content:hover,
+.compositionProduct__second-content:hover {
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.compositionProduct__first-content-circle,
+.compositionProduct__second-content-circle {
+  width: 10em;
+  margin: 1em auto;
+  border-radius: 50%;
+  background: url("./images/tablets.png") center no-repeat;
+  background-size: cover;
+}
+
+.compositionProduct__first-content-circle::before,
+.compositionProduct__second-content-circle::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 100%;
+}

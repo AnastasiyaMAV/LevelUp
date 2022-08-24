@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: linear-gradient(#76429d, #ca99f3);
+}
+
+.promo {
+  padding: 25px;
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  background: url("./images/tablets.png") center no-repeat;
+  background-size: cover;
+}
+
+.promo::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.promo__video {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 50%;
+}
+
+.promo__video-media {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.promo__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.promo__container-heading {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.promo__container-heading-title {
+  font-size: 45px;
+  color: #fff;
+  text-align: center;
+  @media (min-width: 320px) and (max-width: 768px) {
+    font-size: 14px;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    font-size: 24px;
+  }
+}
+
+.promo__container-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo__container-product-img {
+  margin: 0 auto 0;
+}
+
+.promo__container-product-feature {
+  font-size: 35px;
+  color: rgb(236, 229, 229);
+  padding-right: 50px;
+  @media (min-width: 360px) and (max-width: 768px) {
+    font-size: 14px;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    font-size: 24px;
+  }
+}
+
+.promo__container-product-featureUl {
+  margin: 0;
+  width: 100%;
+}
+
+.promo__container-product-img-prod {
+  @media (min-width: 361px) and (max-width: 768px) {
+    width: 50px;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    width: 200px;
+  }
+}
+
+.buttonClass {
+  font-size: 25px;
+  font-family: Arial;
+  width: 140px;
+  height: 50px;
+  margin-bottom: 25px;
+  border-width: 1px;
+  color: #fff;
+  border-color: #c584f3;
+  font-weight: bold;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: inset 0px 1px 0px 0px #efdcfb;
+  text-shadow: inset 0px 1px 0px #9752cc;
+  background: linear-gradient(#dfbdfa, #bc80ea);
+}
+
+.buttonClass:hover {
+  background: linear-gradient(#bc80ea, #dfbdfa);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #E89F71;
+  text-decoration: none;
+}
