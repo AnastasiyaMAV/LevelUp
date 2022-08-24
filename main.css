@@ -57,18 +57,18 @@ body {
   margin: 0 auto;
 }
 
-.promo__container-heading-title {
+.heading-title {
   font-size: 45px;
   color: #fff;
   text-align: center;
 }
 @media (min-width: 320px) and (max-width: 768px) {
-  .promo__container-heading-title {
+  .heading-title {
     font-size: 14px;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-  .promo__container-heading-title {
+  .heading-title {
     font-size: 24px;
   }
 }
@@ -153,6 +153,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .compositionProduct__container {
@@ -264,6 +265,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .presentation__first {
@@ -309,6 +311,7 @@ body {
   align-items: center;
   margin-bottom: 50px;
   font-size: 24px;
+  text-align: center;
 }
 
 .orderForm__timer-items {
